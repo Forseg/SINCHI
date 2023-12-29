@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/*Estilo para los iconos del navbar*/
+.nav-link img {
+    width: 28px; 
+    height: auto; 
+    margin-right: 5px; 
+}
+
+/*Estilo para el cuerpo*/
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.parte1 {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.parte2 {
+    margin: 20px 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+.card {
+    margin: 20px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-text {
+    padding: 15px;
+    color: #f6f6f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row-cols-md-2 .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+}
+
+
+.about-section2, h3 {
+    color: white;
+    margin-top: 100px; 
+    text-align: center;
+    background-color: black;
+ }
+ 
+ .social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; 
+ }
+ 
+ .social-icons a img {
+    width: 30px;
+    height: auto;
+ }
+ 
+ 
+ .social-icons img:hover {
+    transform: scale(1.1);  
+ }
+ 

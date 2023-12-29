@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="Imagenes/inicio/SINCHI.jpg" type="image/x-icon">
+    <title>Bolsa Laboral</title>
+    <link rel="stylesheet" href="Estilos/bolsa laboral/bolsa_laboral.css">
+    <!-- Required meta tags -->
+    <meta charset=" utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<!-- MENU DE OPCIONES -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="Imagenes/inicio/SINCHI.jpg" alt="" width="35" height="30" class="d-inline-block align-text-top">
+            SINCHI INGENIERIA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="Imagenes/inicio/inicio.png" alt="Inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">
+                        <img src="Imagenes/inicio/nosotros.png" alt="Nosotros">
+                        Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="valor.html"><img src="Imagenes/inicio/ingenieria.png" alt="Contacto">
+                        Ingeniería de Valor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">
+                        <img src="Imagenes/inicio/servicios.png" alt="Contacto">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bolsa_laboral.html">
+                        <img src="Imagenes/inicio/experiencia-laboral.png" alt="Contacto">Bolsa Laboral</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">
+                        <img src="Imagenes/inicio/contacto.png" alt="Contacto"> Contacto
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="parte1">
+    <h1 class="titulo" style="color: rgb(227, 8, 8);"><strong>BOLSA LABORAL</strong></h1>
+</div>
+
+
+<!-- INICIO DE FORMULARIO -->
+
+<div class="contenedor">
+
+    <form action="https://formspree.io/f/xqkrzgyb" method="POST">
+
+        <H2 style="font-weight: bolder; color:black;">Trabaja con nosotros...</H2><br>
+
+        <label style="font-size: 25px;" for="correo">𝐂𝐨𝐫𝐫𝐞𝐨:</label><br>
+        <input type="email" id="correo" name="_replyto" required><br><br>
+        
+        <label style="font-size: 25px;" >𝐓𝐮 𝐚𝐩𝐥𝐢𝐜𝐚𝐜𝐢𝐨𝐧 𝐞𝐬 𝐩𝐚𝐫𝐚:</label><br>
+        <input type="radio" id="formacionProfesional" name="proceso" value="Formación Profesional" required>
+        <label for="formacionProfesional">Formación Profesional</label><br>
+        <input type="radio" id="pasantiaVoluntaria" name="proceso" value="Pasantía Voluntaria">
+        <label for="pasantiaVoluntaria">Pasantía Voluntaria</label><br>
+        <input type="radio" id="practicasPreProfesionales" name="proceso" value="Prácticas Pre Profesionales">
+        <label for="practicasPreProfesionales">Prácticas Pre Profesionales</label><br><br>
+
+
+        <h6 style="font-weight: bold; font-size: 25px; color: red;">DATOS PERSONALES</h6>
+        <p style="font-style: italic; font-size: 18px; color: black;">Completa con tus datos personales, para ponernos al contacto contigo</p>
+        
+        <div class="nombre-apellido">
+            <label style="font-size: 25px;" for="nombres">𝐍𝐨𝐦𝐛𝐫𝐞𝐬 y 𝐀𝐩𝐞𝐥𝐥𝐢𝐝𝐨𝐬:</label>
+            <input type="text" id="nombres" name="nombres" required>
+        </div>
+        <br>
+
+        <div class="dni-celular">
+            <label style="font-size: 25px;" for="dni">𝐃𝐍𝐈:</label>
+            <input type="text" id="dni" name="dni" required oninput="limitarLongituddni(this, 8)" inputmode="numeric" pattern="\d*">
+            
+            <label style="font-size: 25px;"for="celular">𝐂𝐞𝐥𝐮𝐥𝐚𝐫:</label>
+            <input type="tel" id="celular" name="celular" required oninput="limitarLongitudcelular(this, 9)" inputmode="numeric" pattern="\d*">
+        </div>
+        <br>
+
+
+        <h6 style="font-weight: bold; font-size: 25px; color: red;">DATOS GENERALES DEL CENTRO EDUCATIVO</h6>
+        <p style="font-style: italic; font-size: 18px; color: black;">Completa con los datos de tu centro educativo universitario</p>
+
+        <div class="proceso-superior">
+            <label style="font-size: 25px;" for="proceso">𝐀𝐩𝐥𝐢𝐜𝐚𝐬 𝐚𝐥 𝐩𝐫𝐨𝐜𝐞𝐬𝐨</label>
+            <input type="text" id="proceso" name="proceso" required>
+            
+            <label style="font-size: 25px;" for="superior">𝐈𝐧𝐬𝐭𝐢𝐭𝐮𝐭𝐨 o 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐝𝐚𝐝</label>
+            <input type="text" id="superior" name="superior" required>
+        </div>
+        <br>
+
+        <div class="carrera-ciclo">
+            <label style="font-size: 25px;" for="carrera">𝐂𝐚𝐫𝐫𝐞𝐫𝐚/𝐄𝐬𝐜𝐮𝐞𝐥𝐚 𝐩𝐫𝐨𝐟𝐞𝐬𝐢𝐨𝐧𝐚𝐥</label>
+            <input type="text" id="carrera" name="carrera" required>
+            
+            <label style="font-size: 25px;" for="ciclo">𝐂𝐢𝐜𝐥𝐨 𝐝𝐞 𝐞𝐬𝐭𝐮𝐝𝐢𝐨𝐬:</label>
+            <input type="text" id="ciclo" name="ciclo" required>
+        </div>
+        <br>
+
+        <div class="actual-fin">
+            <label style="font-size: 25px;" for="actual">𝐂𝐢𝐜𝐥𝐨 𝐚𝐜𝐭𝐮𝐚𝐥:</label>
+            <input type="text" id="actual" name="actual" required>
+            
+            <label style="font-size: 25px;" for="fin">𝐅𝐢𝐧𝐚𝐥𝐢𝐳𝐚:</label>
+            <input type="text" id="fin" name="fin" required>
+        </div>
+        <br>
+
+
+        <h6 style="font-weight: bold; font-size: 25px; color: red;">FORMACION PROFESIONAL</h6>
+        <p style="font-style: italic; font-size: 18px; color: black;">Completa con los datos detalladamente; para tener conocimiento de formación profesional y asi mismo sobre tu disponibilidad.</p>
+
+        <div class="conocimiento-lima">
+            <label style="font-size: 25px;" for="conocimiento">𝐂𝐨𝐦𝐞𝐧𝐭𝐚 𝐬𝐨𝐛𝐫𝐞 𝐭𝐮𝐬 𝐜𝐨𝐧𝐨𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨𝐬, 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐢𝐚𝐬 𝐲 𝐟𝐨𝐫𝐦𝐚𝐜𝐢𝐨𝐧 𝐥𝐚𝐛𝐨𝐫𝐚𝐥 𝐚 𝐥𝐚 𝐟𝐞𝐜𝐡𝐚:</label>
+            <input type="text" id="conocimiento" name="conocimiento" required>
+            
+            <label style="font-size: 25px;" for="lima">𝐓𝐞 𝐠𝐮𝐬𝐭𝐚𝐫𝐢𝐚 𝐫𝐞𝐚𝐥𝐢𝐳𝐚𝐫 𝐭𝐮𝐬 𝐩𝐫𝐚𝐜𝐭𝐢𝐜𝐚𝐬 𝐚𝐪𝐮𝐢 𝐞𝐧 𝐋𝐢𝐦𝐚:</label>
+            <input type="text" id="lima" name="lima" required>
+        </div>
+        <br>
+
+        <div class="provincia-contar">
+            <label style="font-size: 25px;" for="conocimiento" for="provincia">𝐏𝐨𝐝𝐫𝐢𝐚𝐬 𝐫𝐞𝐚𝐥𝐢𝐳𝐚𝐫𝐥𝐨 𝐞𝐧 𝐩𝐫𝐨𝐯𝐢𝐧𝐜𝐢𝐚:</label>
+            <input type="text" id="provincia" name="provincia" required>
+            
+            <label style="font-size: 25px;" for="conocimiento" for="contar">𝐏𝐨𝐫 𝐪𝐮𝐞 𝐜𝐨𝐧𝐬𝐢𝐝𝐞𝐫𝐚𝐬 𝐪𝐮𝐞 𝐝𝐞𝐛𝐞𝐦𝐨𝐬 𝐜𝐨𝐧𝐭𝐚𝐫 𝐜𝐨𝐧𝐭𝐢𝐠𝐨:
+            </label>
+            <input type="text" id="contar" name="contar" required>
+        </div>
+        <br>
+
+        <div class="salud-fortalezas">
+            <label style="font-size: 25px;" for="conocimiento" for="salud">𝐓𝐞 𝐞𝐧𝐜𝐮𝐞𝐧𝐭𝐫𝐚𝐬 𝐛𝐢𝐞𝐧 𝐝𝐞 𝐬𝐚𝐥𝐮𝐝 𝐚 𝐥𝐚 𝐟𝐞𝐜𝐡𝐚 𝐝𝐞 𝐡𝐨𝐲 𝐨 𝐭𝐢𝐞𝐧𝐞𝐬 𝐚𝐥𝐠𝐮𝐧 𝐚𝐧𝐭𝐞𝐜𝐞𝐝𝐞𝐧𝐭𝐞 𝐝𝐞 𝐚𝐥𝐠𝐮𝐧𝐚 𝐞𝐧𝐟𝐞𝐫𝐦𝐞𝐝𝐚𝐝:</label>
+            <input type="text" id="salud" name="salud" required>
+            
+            <label style="font-size: 25px;" for="conocimiento" for="fortalezas">𝐌𝐞𝐧𝐜𝐢𝐨𝐧𝐚 𝐭𝐮𝐬 𝟑 𝐟𝐨𝐫𝐭𝐚𝐥𝐞𝐳𝐚𝐬:
+            </label>
+            <input type="text" id="fortalezas" name="fortalezas" required>
+        </div>
+        <br>
+
+        <div class="debilidades-disponibilidad">
+            <label style="font-size: 25px;" for="conocimiento" for="debilidades">𝐌𝐞𝐧𝐜𝐢𝐨𝐧𝐚 𝐭𝐮𝐬 𝟑 𝐝𝐞𝐛𝐢𝐥𝐢𝐝𝐚𝐝𝐞𝐬:</label>
+            <input type="text" id="debilidades" name="debilidades" required>
+            
+            <label style="font-size: 25px;" for="conocimiento" for="disponibilidad">𝐂𝐮𝐞𝐧𝐭𝐚𝐬 𝐜𝐨𝐧 𝐝𝐢𝐬𝐩𝐨𝐧𝐢𝐛𝐢𝐥𝐢𝐝𝐚𝐝 𝐢𝐧𝐦𝐞𝐝𝐢𝐚𝐭𝐚:</label>
+            <input type="text" id="disponibilidad" name="disponibilidad" required>
+        </div>
+        <br>
+
+        <div class="motivacion-aportes">
+            <label style="font-size: 25px;" for="conocimiento" for="motivacion"> 𝐐𝐮𝐞 𝐭𝐞 𝐦𝐨𝐭𝐢𝐯𝐚 𝐚 𝐫𝐞𝐚𝐥𝐢𝐳𝐚𝐫 𝐭𝐮𝐬 𝐩𝐫𝐚𝐜𝐭𝐢𝐜𝐚𝐬:</label>
+            <input type="text" id="motivacion" name="motivacion" required>
+            
+            <label style="font-size: 25px;" for="conocimiento" for="aportes">𝐄𝐧 𝐜𝐚𝐬𝐨 𝐝𝐞 𝐪𝐮𝐞 𝐬𝐞𝐚𝐬 𝐞𝐥𝐞𝐠𝐢𝐝𝐨(𝐚) 𝐜𝐨𝐦𝐨 𝐜𝐚𝐧𝐝𝐢𝐝𝐚𝐭𝐨(𝐚),¿𝐂𝐮𝐚𝐥𝐞𝐬 𝐬𝐞𝐫𝐚𝐧 𝐭𝐮𝐬 𝐚𝐩𝐨𝐫𝐭𝐞𝐬 𝐝𝐮𝐫𝐚𝐧𝐭𝐞 𝐥𝐚 𝐩𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐜𝐢𝐚?</label>
+            <input type="text" id="aportes" name="aportes" required>
+        </div>
+        <br>
+
+        <div class="compromisos-principios">
+            <label style="font-size: 25px;" for="conocimiento" for="compromisos"> ¿𝐂𝐮𝐚𝐥𝐞𝐬 𝐬𝐞𝐫𝐢𝐚𝐧 𝐭𝐮𝐬 𝐜𝐨𝐦𝐩𝐫𝐨𝐦𝐢𝐬𝐨𝐬 𝐝𝐮𝐫𝐚𝐧𝐭𝐞 𝐞𝐥 𝐝𝐞𝐬𝐚𝐫𝐫𝐨𝐥𝐥𝐨 𝐝𝐞 𝐭𝐮 𝐩𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐜𝐢𝐚?</label>
+            <input type="text" id="compromisos" name="compromisos" required>
+            
+            <label style="font-size: 25px;" for="conocimiento" for="principios">¿𝐐𝐮𝐞 𝐬𝐢𝐠𝐧𝐢𝐟𝐢𝐜𝐚 𝐩𝐚𝐫𝐚 𝐭𝐢 𝐥𝐨𝐬 𝐯𝐚𝐥𝐨𝐫𝐞𝐬 𝐲 𝐩𝐫𝐢𝐧𝐜𝐢𝐩𝐢𝐨𝐬 𝐝𝐞 𝐥𝐚 𝐞𝐭𝐢𝐜𝐚 𝐩𝐫𝐨𝐟𝐞𝐬𝐢𝐨𝐧𝐚𝐥?</label>
+            <input type="text" id="principios" name="principios" required>
+        </div>
+        <br>
+
+
+
+        <input type="submit" value="Enviar" style="background-color: rgb(15, 202, 62); color: white; font-family:Arial, Helvetica, sans-serif; font-weight: bolder; border-radius: 8px; border-color: black; font-style: italic;">
+        
+    <input type="reset" value="Limpiar datos" style="background-color: red; color: white; font-family:Arial, Helvetica, sans-serif; font-weight: bolder; border-radius: 8px; border-color: black; font-style: italic;">
+
+
+    </form>
+</div>
+
+<body>
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="Funciones/bolsa laboral/bolsa.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

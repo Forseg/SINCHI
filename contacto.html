@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="Imagenes/inicio/SINCHI.jpg" type="image/x-icon">
+    <title>Bolsa Laboral</title>
+    <link rel="stylesheet" href="Estilos/contacto/contacto.css">
+    <!-- Required meta tags -->
+    <meta charset=" utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+   <!-- Menú de opciones -->
+
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="Imagenes/inicio/SINCHI.jpg" alt="" width="35" height="30" class="d-inline-block align-text-top">
+            SINCHI INGENIERIA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="Imagenes/inicio/inicio.png" alt="Inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">
+                        <img src="Imagenes/inicio/nosotros.png" alt="Nosotros">
+                        Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="valor.html"><img src="Imagenes/inicio/ingenieria.png" alt="Contacto">
+                        Ingeniería de Valor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">
+                        <img src="Imagenes/inicio/servicios.png" alt="Contacto">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bolsa_laboral.html">
+                        <img src="Imagenes/inicio/experiencia-laboral.png" alt="Contacto">Bolsa Laboral</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">
+                        <img src="Imagenes/inicio/contacto.png" alt="Contacto"> Contacto
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+   <!-- TITULO DE INICIO -->
+<div class="parte1">
+    <h1 class="titulo" style="color: rgb(227, 8, 8);"><strong>COTIZA CON NOSOTROS</strong></h1>
+</div>
+
+
+   <!-- Contenedor y Formulario -->
+
+<div class="contenedor">
+    <h3 style="font-weight: bolder; color:black;">SOLICITA AYUDA PROFESIONAL</h3>
+    <form onsubmit="enviarAWhatsApp(); return false;">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required><br>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required><br>
+
+      <label for="empresa">Empresa(opcional):</label>
+    <input type="text" id="empresa" name="empresa"><br>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required><br>
+
+      <label for="ciudad">Ciudad:</label>
+      <select id="ciudad" name="ciudad" required onchange="actualizarDistritos()">
+        <option value="Ancash">Áncash</option>
+        <option value="Apurimac">Apurímac</option>
+        <option value="Arequipa">Arequipa</option>
+        <option value="Ayacucho">Ayacucho</option>
+        <option value="Cajamarca">Cajamarca</option>
+        <option value="Callao">Callao</option>
+        <option value="Cusco">Cusco</option>
+        <option value="Huancavelica">Huancavelica</option>
+        <option value="Huanuco">Huánuco</option>
+        <option value="Ica">Ica</option>
+        <option value="Junin">Junín</option>
+        <option value="LaLibertad">La Libertad</option>
+        <option value="Lambayeque">Lambayeque</option>
+        <option value="Lima">Lima</option>
+        <option value="Loreto">Loreto</option>
+        <option value="MadredeDios">Madre de Dios</option>
+        <option value="Moquegua">Moquegua</option>
+        <option value="Pasco">Pasco</option>
+        <option value="Piura">Piura</option>
+        <option value="Puno">Puno</option>
+        <option value="SanMartin">San Martín</option>
+        <option value="Tacna">Tacna</option>
+        <option value="Tumbes">Tumbes</option>
+        <option value="Ucayali">Ucayali</option>
+      </select><br><br>
+
+      <label for="distrito">Distrito/Provincia:</label>
+      <select id="distrito" name="distrito" required>
+      </select><br><br>
+
+      <label for="texto" style="color: black; font-weight: bold;">Ingresa tu comentario:</label><br>
+      <textarea id="comentario" name="comentario" rows="4" cols="45" required></textarea><br> <br>
+
+      <input type="submit" value="Enviar">
+      <input type="button" value="Eliminar datos" onclick="limpiarFormulario()">
+
+    </form>
+  </div>
+ 
+   <!-- Parte Inferior de los iconos -->
+  <div class="about-section2">
+    <h2>Síguenos y mándanos un mensaje</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Sinchiingenieria" target="_blank">
+        <img src="Imagenes/Redes Sociales/facebook.png" alt="Facebook">
+    </a>
+      <a href="https://www.linkedin.com/company/sinchi-ingenieria/" target="_blank">
+        <img src="Imagenes/Redes Sociales/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="#">
+        <img src="Imagenes/Redes Sociales/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com/sinchingenieria" target="_blank">
+        <img src="Imagenes/Redes Sociales/twiter.png" alt="Twiter">
+      </a>
+      <a href="https://t.me/MiningPeru" target="_blank">
+        <img src="Imagenes/Redes Sociales/telegrama.png" alt="Telegram">
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=51962581590&text=Hola%20quisiera%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+        <img src="Imagenes/Redes Sociales/whatsapp.png" alt="Whatsapp">
+      </a>
+    </div>
+  </div>
+
+<body>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="Funciones/contacto/contacto.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
